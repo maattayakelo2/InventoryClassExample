@@ -13,4 +13,6 @@ public:
 	InventoryList();
 	void AddItem();
 	void showList();
+	int readFromFile(string filename);
+	int writeToFile(string filename);
 };

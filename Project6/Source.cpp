@@ -6,16 +6,17 @@ using namespace std;
 
 int main()
 {
-	Inventory iobject1;
-	iobject1.getInventoryInput();
-	cout << iobject1 << endl;
+	
 
 	InventoryList myList;
+	myList.readFromFile("c:\\users\\michelle\\documents\\mytest.txt");
+
 	myList.AddItem();
 	myList.AddItem();
 	myList.AddItem();
 
 	myList.showList();
+	myList.writeToFile("c:\\users\\michelle\\documents\\mytest.txt");
 
 
 	system("pause");
